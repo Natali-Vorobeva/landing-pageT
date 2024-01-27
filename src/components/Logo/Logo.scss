@@ -1,0 +1,25 @@
+@import '../../assets/styles/vars.scss';
+
+.logo {
+	max-width: 24.5rem;
+	display: flex;
+
+	&__horses {
+		display: flex;
+		padding-bottom: 6.2rem;
+	}
+
+	&__horse {
+		width: 2.1rem;
+	}
+
+	&__name {
+		color: $text-color-logo;
+		text-transform: uppercase;		
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 104%;
+		padding-left: .6rem;
+		display: flex;
+	}
+}

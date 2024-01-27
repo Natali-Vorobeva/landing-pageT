@@ -1,0 +1,59 @@
+@import '../../assets/styles/vars.scss';
+
+.header {
+	background-image: url('../../assets/images/bg-header.svg');
+	background-repeat: repeat-x;
+	overflow: hidden;
+
+	&__content {
+		max-width: 54.2rem;		
+		padding-bottom: 12.5rem;
+	}
+
+	&__title {		
+		font-family: $font-family-title;
+		text-transform: uppercase;
+		line-height: 6.5rem;
+		padding-bottom: 2.4rem;
+	}
+
+	&__title-left {
+		font-size: 6rem;
+	}
+
+	&__title-center {
+		font-size: 6rem;
+		text-align: center;
+	}
+	&__title-right {
+		font-size: 6rem;
+		text-align: right;
+	}
+	&__subtitle {
+		font-family: inherit;
+		text-align: center;
+		font-size: 1.8rem;
+		line-height: 2.34rem;
+		padding-bottom: 4rem;
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 1.6rem;
+		flex: 50% 50%;
+		justify-content: space-between;
+	}
+
+	&__running-line {
+		font-size: 16px;
+		animation: marquee 15s infinite linear;
+		font-size: sans-serif;
+	}
+
+	&__running-line {
+		background-color: $bg-running-line;
+		color: $text-white;
+		padding: 1.6rem;
+		text-transform: uppercase;
+	}
+}

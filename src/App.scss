@@ -1,0 +1,18 @@
+@import './assets/styles/GlobalStyle.scss';
+@import './assets/styles/vars.scss';
+
+#root {
+  max-width: 136.6rem;
+  margin: 0 auto;
+	padding: 0;
+}
+
+.container {
+	padding: 2.6rem 7.2rem 0;
+}
+
+.app {
+	font-family: 'Golos Text', sans-serif;
+	margin: 0 auto;
+	color: $text-color;
+}
