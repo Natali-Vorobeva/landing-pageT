@@ -9,6 +9,10 @@
 
 .container {
 	padding: 2.6rem 7.2rem 0;
+
+	@media (max-width:640px){
+		padding: 2.6rem 1.9rem 0;
+	}
 }
 
 .app {

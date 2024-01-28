@@ -1,5 +1,6 @@
 import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
+import Marquee from '../Marquee/Marquee';
 import './Header.scss'
 
 function Header() {
@@ -23,9 +24,7 @@ function Header() {
 					</div>					
 				</div>				
 			</div>
-			<marquee scrollamount="10" className="header__running-line">
-					Дело помощи утопающим — дело рук самих утопающих! • Шахматы двигают вперед не только культуру, но и экономику! • Лед тронулся, господа присяжные заседатели!
-				</marquee>
+			<Marquee />
 		</header>
 	);
 }

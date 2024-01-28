@@ -5,6 +5,8 @@ import './assets/styles/GlobalStyle.scss';
 import './App.scss'
 
 // ! Привести в порядок переменные в vars 
+// TODO    Позиционировать title в header 
+// todo    Позиционировать bg в header 
 
 function App() {
 

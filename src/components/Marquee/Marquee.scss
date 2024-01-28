@@ -1,0 +1,9 @@
+@import '../../assets/styles/vars.scss';
+
+.marquee {
+	background-color: $bg-running-line;
+	color: $text-white;
+	padding: 1.8rem;
+	text-transform: uppercase;
+	font-size: 2.2rem;
+}

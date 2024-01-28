@@ -5,6 +5,13 @@
 	background-repeat: repeat-x;
 	overflow: hidden;
 
+	@media (max-width:640px){
+		background-image: url('../../assets/images/bg-mobile.svg');	
+		background-repeat: no-repeat;	
+		background-size: 100% 100%;
+		overflow: hidden;
+	}
+
 	&__content {
 		max-width: 54.2rem;		
 		padding-bottom: 12.5rem;
@@ -18,15 +25,18 @@
 	}
 
 	&__title-left {
-		font-size: 6rem;
+		font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
 	}
 
 	&__title-center {
-		font-size: 6rem;
+		font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
 		text-align: center;
 	}
 	&__title-right {
-		font-size: 6rem;
+		font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
 		text-align: right;
 	}
 	&__subtitle {
@@ -35,6 +45,10 @@
 		font-size: 1.8rem;
 		line-height: 2.34rem;
 		padding-bottom: 4rem;
+
+		@media (max-width:640px){		
+			text-align: left;
+		}
 	}
 
 	&__buttons {
@@ -42,6 +56,10 @@
 		gap: 1.6rem;
 		flex: 50% 50%;
 		justify-content: space-between;
+
+		@media (max-width:640px){
+			display: block;
+		}
 	}
 
 	&__running-line {
