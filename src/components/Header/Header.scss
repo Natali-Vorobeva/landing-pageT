@@ -12,7 +12,6 @@
 
 	&__bg {
 		max-width: 100%;
-		border: 5px solid #ff0000;
 	}
 
 	&__background {
@@ -23,47 +22,43 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-		// border: 5px solid #000;
-
-		@include mq(1337, 4000) {
-			// object-fit: scale-down;
-			// object-fit: cover;
-		}
 	}
 
 	&__title {	
 		font-family: 'Merriweather', serif;
-		text-transform: uppercase;
-		// @include font-size(3.6, 3.96);
-		font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
-		line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		text-transform: uppercase;	
 		letter-spacing: 1.24px;
 		padding-bottom: 2.4rem;
-		font-weight: 300;
-
-		@include mq(1337, 4000) {
-			// @include font-size(6, 6.6);
-			// font-weight: 700;
-			font-size: 6rem;
-			line-height: 6.6rem;
-		}
+		font-weight: 300;		
  	}
 
 	&__title-left {
-		// font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
-		// line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		@include mq(1337, 4000) {
+			font-size: 6rem;
+			line-height: 6.6rem;
+		}
 	}
 
 	&__title-center {
-		// font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
-		// line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
 		text-align: center;
+		@include mq(1337, 4000) {
+			font-size: 6rem;
+			line-height: 6.6rem;
+		}
 	}
 
 	&__title-right {
-		// font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
-		// line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+		line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
 		text-align: right;
+		@include mq(1337, 4000) {
+			font-size: 6rem;
+			line-height: 6.6rem;
+		}
 	}
 
 	&__subtitle {

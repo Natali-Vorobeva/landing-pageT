@@ -1,5 +1,6 @@
 # [Клуб четырех коней](https://natali-vorobeva.github.io/landing-pageT/)
 
+* React + vite
 * Адаптивная и резиновая верстка
 * Адаптивная таблица
 * Sass
