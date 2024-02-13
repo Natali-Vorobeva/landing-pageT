@@ -1,0 +1,40 @@
+@import '../../assets/styles/config/_mixins.scss';
+
+.gallery {
+
+	&__plane {
+		position: absolute;
+		z-index: 100;
+		right: 1.2rem;
+		bottom: 2rem;
+		width: 30%;	
+
+		@include mq(1000) {
+			bottom: 6.5rem;
+		}
+		@include mq(918) {
+			right: 2.5rem;
+			bottom: 6rem;
+		}
+		@include mq(849) {
+			bottom: 8rem;
+		}
+		@include mq(734) {
+			bottom: 9rem;
+		}
+		@include mq(673) {
+			top: -55%;
+			left: 0;
+			width: calc(100% + (65 - 100) * ((100vw - 37.5rem) / (76.5 - 37.5)));
+		}
+			@include mq(521) {
+			top: -50%;
+		}
+			@include mq(412) {
+			top: -43%;
+		}
+	}
+	&__image {
+		width: 100%;
+	}
+}

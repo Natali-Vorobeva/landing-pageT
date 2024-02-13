@@ -1,12 +1,18 @@
-@import '../../assets/styles/vars.scss';
+@import '../../assets/styles/config/_colors.scss';
+@import '../../assets/styles/config/_mixins.scss';
 
 .logo {
 	max-width: 24.5rem;
 	display: flex;
+	padding-top: 2.6rem;
 
 	&__horses {
 		display: flex;
 		padding-bottom: 6.2rem;
+
+		@include mq(640) {
+			padding-bottom: 4rem;
+		}
 	}
 
 	&__horse {
@@ -14,11 +20,10 @@
 	}
 
 	&__name {
-		color: $text-color-logo;
-		text-transform: uppercase;		
-		font-size: 1.6rem;
+		color: $color-logo;
+		text-transform: uppercase;	
 		font-weight: 700;
-		line-height: 104%;
+		@include font-size(1.6, 1.79);
 		padding-left: .6rem;
 		display: flex;
 	}

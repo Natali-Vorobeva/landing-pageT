@@ -1,0 +1,22 @@
+@import '../../assets/styles/config/_colors.scss';
+@import '../../assets/styles/config/_mixins.scss';
+
+.footer {
+	flex: 0 0 auto;
+	background-color: $bg-footer;
+	margin-top: 14rem;
+
+	@include mq(1001) {
+		margin-top: 10rem;
+	}
+
+	&__text {
+		@include font-size(1.6, 1.92);
+		padding-top: 4rem;
+		padding-bottom: 7.2rem;
+
+		@include mq(600) {
+			padding-bottom: 6rem;
+		}
+	}
+}

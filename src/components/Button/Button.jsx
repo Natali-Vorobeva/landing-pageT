@@ -1,11 +1,11 @@
 import './Button.scss'
 
-function Button({ btnText, style }) {
+function Button({ btnText, style, anchor }) {
 
 	return (
-		<button className={`button ${style}`}>
+		<a href={anchor} className={`button ${style}`}>
 			{btnText}
-		</button>
+		</a>
 	);
 }
 

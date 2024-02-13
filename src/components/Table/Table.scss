@@ -1,0 +1,85 @@
+@import '../../assets/styles/config/_colors.scss';
+@import '../../assets/styles/config/_mixins.scss';
+
+.table {
+	text-align: center;
+	color: $color-primary;
+	width: 100%;
+
+	&__wrap {
+		position: relative;
+		border: 1px solid $color-gray;
+		width: 100%;
+		border-collapse: collapse;
+		border: 0;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: .2rem;
+			height: 100%;
+			top: 0;
+			right: 48%;
+			background-color: $color-gray;
+
+			@include mq(598) {
+				display: none;
+			}
+		}	
+	}
+
+	&__tr {
+		@include font-size(2, 2.4);
+		padding: 5px;		
+
+		@include mq(598) {
+			margin-bottom: 10px;
+		}	
+	}
+
+	&__td {
+		display: block;
+		padding: 10px 0;
+		text-align: left;
+		font-size: 2rem;
+		color: rgba(49, 49, 49, 1);
+		font-weight: 600;
+
+		&:not(:last-child){
+			border-bottom: 2px solid $color-gray;
+		}
+		
+		&:before {
+			content: attr(data-label);
+			float: left;
+			width: 53%;
+			text-align: left;
+			font-weight: 400;
+			color: rgba(49, 49, 49, .7);					
+		}
+
+		@include mq(598) {
+			padding: 0 0 .8rem 0;
+
+			&:before {
+				content: attr(data-label);
+				display: block;
+				float: none;
+				padding: .8rem 0;
+			}
+		}
+	}
+
+	&__text {
+		padding: 0 0 0 -2rem;
+		width: 50;
+	}
+
+	&__del {
+		color: $color-red;
+	} 
+	
+	&__span {
+		color: $color-primary;
+	}	
+}

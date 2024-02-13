@@ -1,0 +1,77 @@
+@import '../../assets/styles/config/_mixins.scss';
+
+.navigation {
+	display: flex;
+	height: 4.4rem;
+	align-items: center;
+	align-content: end;
+
+	&__arrow{
+		@include button-arrow;
+
+		&_left {
+			@include arrow;
+
+			&_disabled {
+				background-color: rgba(49, 49, 49, 0.2);
+				pointer-events: none !important;
+
+				&:hover {
+					background-color: rgba(49, 49, 49, 0.2);
+				}				
+			}
+		}
+		&_right {
+		
+			@include arrow;
+
+			&_disabled {
+				background-color: rgba(49, 49, 49, 0.2);
+				pointer-events: none !important;
+
+				&:hover {
+					background-color: rgba(49, 49, 49, 0.2);
+				}
+			}
+		}
+	}
+
+	&__position {
+		display: flex;
+		justify-content: center;		
+		margin: 2.8rem 0 0 0;
+	}
+
+	&__counter {
+		display: flex;
+		width: 3.5rem;
+		justify-content: center;
+		align-items: center;
+		margin: 0 1.65rem;
+	}
+
+	&__count {
+		@include font-size(1.6, 1.92);
+		color: rgba(49, 49, 49, .6);
+	}
+
+	&__count-span {
+		color: rgba(49, 49, 49, 1)
+	}
+
+	&__slider {
+		margin: auto 0;
+		width: 15.1rem;
+	}
+
+	&__bottom {
+		min-width: 12.9rem;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.arrow-translate {
+	transform: rotate(180deg);
+}
+

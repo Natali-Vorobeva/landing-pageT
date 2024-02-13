@@ -1,0 +1,68 @@
+@import '../../assets/styles/config/_mixins.scss';
+@import '../../assets/styles/config/_colors.scss';
+
+.chess-player {
+	@include width-slide-max;
+	padding-left: 1rem;
+	padding-right: 1rem;	
+	padding-bottom: 4rem;
+	display: grid;
+	grid-auto-flow: row;
+	grid-template: auto 1fr minmax(2.4rem, auto) minmax(3.5rem, auto) / 1fr;
+	
+	@include mq(376, 626) {
+		@include width-slide-medium;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}	
+
+	@include mq(375) {
+		@include width-slide-small;		
+		padding-left: 0;
+		padding-right: 0;
+	}		
+
+	&__image {
+		position: relative;
+		padding: 0 0 83% 0;
+		max-width: 32rem;
+		display: flex;
+
+		@include mq(375) {
+			padding: 0 0 94% 0;
+		}	
+	}
+
+	&__img {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 2.5rem;
+		object-fit: cover;
+
+		@include mq(375) {			
+			left: 1rem;
+		}	
+	}
+
+	&__title {
+		@include font-size(2.4, 2.88);
+		font-weight: 600;
+		color: $color_dark;
+		padding-top: 2.8rem;
+		text-align: center;
+	}
+
+	&__subtitle {
+		@include font-size(2, 2.4);
+		padding-bottom: .2rem;
+		color: rgba(49, 49, 49, .6);
+		font-weight: 400;
+		text-align: center;
+	}
+
+	&__button {
+		align-self: center;
+		margin-top: .2rem;
+	}
+}

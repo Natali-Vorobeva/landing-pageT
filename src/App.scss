@@ -1,22 +1,26 @@
 @import './assets/styles/GlobalStyle.scss';
-@import './assets/styles/vars.scss';
+@import './assets/styles/config/colors';
+@import './assets/styles/config/mixins';
 
 #root {
-  max-width: 136.6rem;
+	max-width: 136.6rem;			
   margin: 0 auto;
 	padding: 0;
-}
-
-.container {
-	padding: 2.6rem 7.2rem 0;
-
-	@media (max-width:640px){
-		padding: 2.6rem 1.9rem 0;
-	}
 }
 
 .app {
 	font-family: 'Golos Text', sans-serif;
 	margin: 0 auto;
-	color: $text-color;
+	color: $color-primary;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.container {
+	padding: 0 7.2rem;
+	
+	@include mq(673) {
+		padding: 0 $container_padding-673;
+	}
 }

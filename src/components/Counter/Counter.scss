@@ -1,0 +1,18 @@
+@import '../../assets/styles/config/_mixins.scss';
+
+.counter {
+	display: flex;
+	width: 3.5rem;
+	justify-content: center;
+	align-items: center;
+	margin: 0 1.65rem;
+
+	&__count {
+		@include font-size(1.6, 1.92);
+		color: rgba(49, 49, 49, .6);
+	}
+
+	&__count-span {
+		color: rgba(49, 49, 49, 1)
+	}
+}
