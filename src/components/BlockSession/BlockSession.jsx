@@ -1,5 +1,5 @@
 import Table from '../Table/Table';
-import session from '../../assets/images/session.png'
+import session from '../../assets/images/session.webp'
 import './BlockSession.scss';
 
 function BlockSession({ width }) {

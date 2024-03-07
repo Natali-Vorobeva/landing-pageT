@@ -1,4 +1,4 @@
-import lecture from '../../assets/images/lecture.png';
+import lecture from '../../assets/images/lecture.webp';
 
 import './BlockLecture.scss';
 
@@ -12,7 +12,7 @@ function BlockLecture({ width }) {
 					{
 						width < 640 && (
 							<div>
-								<img className="block-lecture__img" src={lecture} alt="На изображении играют в шахматы" />
+								<img className="block-lecture__img" src={lecture} alt="Играют в шахматы" />
 							</div>
 						)
 					}
@@ -23,7 +23,7 @@ function BlockLecture({ width }) {
 			{
 				width >= 640 && (
 					<div className="block-lecture__image">
-						<img className="block-lecture__img" src={lecture} alt="На изображении играют в шахматы" />
+						<img className="block-lecture__img" src={lecture} alt="Играют в шахматы" />
 					</div>
 				)
 			}

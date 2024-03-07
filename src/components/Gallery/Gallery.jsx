@@ -3,7 +3,7 @@ import Navigation from '../Navigation/Navigation';
 import FlexItems from '../FlexItems/FlexItems';
 import Dots from '../Dots/Dots';
 import { flexElements } from '../../constants/constants'
-import plane from '../../assets/images/plane-640.png'
+import plane from '../../assets/images/plane-640.webp'
 
 import './Gallery.scss';
 

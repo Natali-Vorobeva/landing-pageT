@@ -1,7 +1,7 @@
 import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
-import bg from '../../assets/images/bg-header.png'
-import bgMobile from '../../assets/images/bg-mobile.png'
+import bg from '../../assets/images/bg-header.webp'
+import bgMobile from '../../assets/images/bg-mobile.webp'
 
 import './Header.scss'
 

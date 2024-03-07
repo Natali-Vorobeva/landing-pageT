@@ -1,4 +1,4 @@
-import plane from '../../assets/images/plane-640.png'
+import plane from '../../assets/images/plane-640.webp'
 
 import './Plane.scss';
 
