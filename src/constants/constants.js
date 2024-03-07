@@ -75,31 +75,31 @@ export const chessplayers = [
 	},
 	{
 		id: 2,
-		img: '../assets/images/chessplayer.webp',
+		img: '/chessplayer.webp',
 		title: 'Эммануил Ласкер',
 		subtitle: 'Чемпион мира по шахматам'
 	},
 	{
 		id: 3,
-		img: '../assets/images/chessplayer.webp',
+		img: '/chessplayer.webp',
 		title: 'Александр Алехин',
 		subtitle: 'Чемпион мира по шахматам'
 	},
 	{
 		id: 4,
-		img: '../assets/images/chessplayer.webp',
+		img: '/chessplayer.webp',
 		title: 'Арон Нимцович',
 		subtitle: 'Чемпион мира по шахматам'
 	},
 	{
 		id: 5,
-		img: '../assets/images/chessplayer.webp',
+		img: '/chessplayer.webp',
 		title: 'Рихард Рети',
 		subtitle: 'Чемпион мира по шахматам'
 	},
 	{
 		id: 6,
-		img: '../assets/images/chessplayer.webp',
+		img: '/chessplayer.webp',
 		title: 'Остап Бендер',
 		subtitle: 'Гроссмейстер'
 	}

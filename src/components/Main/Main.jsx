@@ -44,7 +44,7 @@ function Main() {
 						return (
 							<CardChessPlayer
 								key={item.id}
-								image={item.image}
+								image={item.img}
 								title={item.title}
 								subtitle={item.subtitle} />
 						)
