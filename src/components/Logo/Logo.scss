@@ -2,7 +2,7 @@
 @import '../../assets/styles/config/_mixins.scss';
 
 .logo {
-	max-width: 24.5rem;
+	width: 24.5rem;
 	display: flex;
 	padding-top: 2.6rem;
 
@@ -17,6 +17,7 @@
 
 	&__horse {
 		width: 2.1rem;
+		height: 3.053rem; 
 	}
 
 	&__name {

@@ -1,13 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/images/horse.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Клуб четырех коней</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/src/assets/images/horse.ico" />
+	<link rel="preload" as="image" href="/src/assets/images/bg-header.webp" type="image/webp" />
+	<link rel="preload" as="image" href="/src/assets/images/bg-mobile-1.webp" type="image/webp" />
+	<link rel="preload" as="fetch" href="/src/app.jsx">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Клуб четырех коней</title>
+
+	
+</head>
+
+<body>
+	<div id="root"></div>
+	<script type="module" src="/src/main.jsx" defer></script>
+</body>
+
 </html>

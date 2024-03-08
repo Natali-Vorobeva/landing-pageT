@@ -22,7 +22,7 @@ function Navigation({
 
 	return (
 		<div className={`navigation ${className}`}>
-			<button onClick={() => clickLeft()} className={`navigation__arrow navigation__arrow_left navigation__arrow_left_${disabledButtonLeft}`}><Arrow className="arrow-translate" /></button>
+			<button id="left" aria-label="Влево" onClick={() => clickLeft()} className={`navigation__arrow navigation__arrow_left navigation__arrow_left_${disabledButtonLeft}`}><Arrow className="arrow-translate" /></button>
 			{
 				navigation && <div className="dots">
 					{children}
@@ -32,7 +32,7 @@ function Navigation({
 				<Counter count={count} />				
 			)}
 
-			<button onClick={() => clickRight()} className={`navigation__arrow navigation__arrow_right navigation__arrow_right_${disabledButtonRight}`}><Arrow /></button>
+			<button id="right" aria-label="Вправо" onClick={() => clickRight()} className={`navigation__arrow navigation__arrow_right navigation__arrow_right_${disabledButtonRight}`}><Arrow /></button>
 		</div>
 	);
 }

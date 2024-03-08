@@ -29,12 +29,13 @@
 		text-transform: uppercase;	
 		letter-spacing: 1.24px;
 		padding-bottom: 2.4rem;
-		font-weight: 300;		
- 	}
+		font-weight: 300;	
+	}
 
 	&__title-left {
 		font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
 		line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
+
 		@include mq(1337, 4000) {
 			font-size: 6rem;
 			line-height: 6.6rem;
@@ -55,6 +56,7 @@
 		font-size: calc(3.6rem + (6 - 3.6) * ((100vw - 37.5rem) / (133.6 - 37.5)));
 		line-height: calc(3.96rem + (6.5 - 3.96) * ((100vw - 37.5rem) / (133.6 - 37.5)));
 		text-align: right;
+		
 		@include mq(1337, 4000) {
 			font-size: 6rem;
 			line-height: 6.6rem;
@@ -79,12 +81,11 @@
 		gap: 1.25rem;
 		flex: 50% 50%;
 		justify-content: space-between;
-		padding-bottom: 12.5rem;
+		padding-bottom: calc(15rem + (38 - 15) * ((100vw - 30rem) / (133.4 - 30)));
 		
 		@include mq(640) {
 			display: block;
-			max-width: 100%;			
-			padding-bottom: 32.9rem;
+			max-width: 100%;
 		}
 	}
 }

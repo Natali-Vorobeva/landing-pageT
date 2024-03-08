@@ -6,7 +6,7 @@ function Plane({ className }) {
 
 	return (
 			<div className={`${className}__plane`}>
-				<img className={`${className}__image`} src={plane} alt="Самолёт" />
+				<img className={`${className}__image`} src={plane} loading="lazy" alt="Самолёт" />
 			</div>
 	);
 }

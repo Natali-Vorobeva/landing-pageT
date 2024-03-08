@@ -1,25 +1,27 @@
-import Button from '../Button/Button';
-import Logo from '../Logo/Logo';
+import Button from '../Button/Button'
+import Logo from '../Logo/Logo'
+import Marquee from '../Marquee/Marquee'
 import bg from '../../assets/images/bg-header.webp'
-import bgMobile from '../../assets/images/bg-mobile.webp'
+import bgMobile from '../../assets/images/bg-mobile-1.webp'
 
 import './Header.scss'
 
 function Header() {
 
 	return (
+		<>
 		<header className="header">
 			<picture>
-				<source srcSet={bgMobile} media="(max-width: 640px)" />
-					<img  className="header__background" src={bg} alt="Фон" />
-			</picture>			
+				<source fetchpriority="high" srcSet={bgMobile} media="(max-width: 640px)" />
+					<img fetchpriority="high" className="header__background" src={bg} alt="Фон" />
+			</picture>
 			<div className="container">
 				<Logo />
 				<div className="header__content">
 					<div className="header__title">
-						<h2 className="header__title-left">Превратите уездный&nbsp;город</h2>
-						<h2 className="header__title-center">в&nbsp;столицу</h2>
-						<h2 className="header__title-right">земного&nbsp;шара</h2>
+						<p className="header__title-left">Превратите уездный&nbsp;город</p>
+						<p className="header__title-center">в&nbsp;столицу</p>
+						<p className="header__title-right">земного&nbsp;шара</p>
 					</div>
 					<p className="header__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
 				</div>
@@ -29,6 +31,8 @@ function Header() {
 				</div>
 			</div>
 		</header>
+			<Marquee />
+		</>
 	);
 }
 

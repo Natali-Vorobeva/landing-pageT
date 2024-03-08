@@ -7,7 +7,7 @@ function BlockSession({ width }) {
 	return (
 		<section id="session" className="block-session container">
 			<div className="block-session__column-image">
-				<img className="block-session__img" src={session} alt="Изображение шахматиста" />
+				<img className="block-session__img" src={session} loading="lazy" alt="Изображение шахматиста" />
 			</div>
 			<div className="block-session__column-table">
 				<div className="block-session__table">
